@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .grid-container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      background-color: #232629; /* Gap color */
+      gap: 9px;
+    }
+    .i1 {
+      background-color: #e93c36; /* Red */
+      grid-column: 1 / 2;
+    }
+    .i2 {
+      background-color: #F0F1EC; /* White */
+      grid-column: 2 / 5;
+    }
+    .i3 {
+      background-color: #F0F1EC;
+      grid-row: 2 / 4;
+    }
+    .i4 {
+      background-color: #F0F1EC;
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+    }
+    .i5 {
+      background-color: #004592; /* Blue */
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+      border-bottom: 10px solid #232629;
+    }
+    .i6 {
+      background-color: #F0F1EC;
+      grid-column: 4 / 5;
+      grid-row: 3 / 5;
+    }
+    .i7 {
+      background-color: #F0F1EC;
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+    }
+    .i8 {
+      background-color: #F9D01E; /* Yellow */
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+    }
+    .i9 {
+      background-color: #01070f; /* Blue again */
+      grid-column: 3 / 4;
+      grid-row: 4 / 5;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="i1"></div>
+    <div class="i2"></div>
+    <div class="i3"></div>
+    <div class="i4"></div>
+    <div class="i5"></div>
+    <div class="i6"></div>
+    <div class="i7"></div>
+    <div class="i8"></div>
+    <div class="i9"></div>
+  </div>
+</body>
+</html>
