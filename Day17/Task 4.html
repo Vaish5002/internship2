@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light {
+            background: white;
+            color: black;
+        }
+
+        .dark {
+            background-color: rgb(253, 4, 245);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="themeToggle">Toggle Theme</button>
+    <div id="main">Some content</div>
+    <script>
+        const toggleBtn = document.getElementById("themeToggle");
+        const body = document.body;
+
+    
+        toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        body.classList.toggle("light");
+    });
+    </script>
+</body>
+
+</html>

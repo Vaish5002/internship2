@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Play Local Audio</title>
+</head>
+
+<body>
+    <button id="inc">+</button>
+    <button id="dec">-</button>
+    <button id="reset">Reset</button>
+    <p id="count">0</p>
+    <script>
+        let count = 0;
+        document.getElementById("inc").addEventListener("click", () => {
+            count++;
+            document.getElementById("count").innerText = count;
+        });
+        document.getElementById("dec").addEventListener("click", () => {
+            count--;
+            if (count>0){
+            document.getElementById("count").innerText = count;
+            }
+            else{
+                count= 0;
+                 document.getElementById("count").innerText = 0;
+            }
+        });
+         document.getElementById("reset").addEventListener("click", () => {
+            count=0;
+            document.getElementById("count").innerText = count;
+        });
+        
+        // code for dec and reset
+    </script>
+
+</body>
+
+</html>
